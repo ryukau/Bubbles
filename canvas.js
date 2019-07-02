@@ -452,7 +452,7 @@ class NumberInputLog extends NumberInput {
 
   setRangeValue(value) {
     this.range.value = Math.log2(
-      this.maxInLinear * (this.defaultValue - this.min)
+      this.maxInLinear * (value - this.min)
       / (this.max - this.min) + 1
     ) / this.maxInLog
   }
